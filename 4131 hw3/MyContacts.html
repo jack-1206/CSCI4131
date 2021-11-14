@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>My Contacts</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		 <script src="Contacts.js"></script> 
+	</head>
+	<body>
+		<div class="navigation"> 
+			<p>
+			<a href="./MyContacts.html" target="_self" >My Contacts</a>   
+			<a href="./MyForm.html" target="_self">Form Input</a> 
+			<a href="./MyWidgets.html" target="_self">My Widgets</a>
+			</p> 
+		</div>
+		
+		<h1>My University Contacts</h1>
+		<div>
+			<div>
+				<table id="contTable">
+					<tr>
+						<th>Name</th> 
+						<th>Category</th>
+						<th>Location</th> 
+						<th>Contact Information</th>
+						<th>Email</th> 
+						<th>Website</th>
+					</tr>
+
+					<tr class="controw" onmouseover="smallpic(1)" onmouseout="dissapear(1)">
+						<td>Mr. Tianming Cui</td>
+						<td>Academic</td>
+						<td class="addr">Keller Hall<br>200 Union Street SE<br>Minneapolis, MN 55455</td>
+						<td>Spring 21 Csci 4131 TA
+						<br>
+						<img id="thumbnail1" src="#" class="smallpic" alt="">
+						</td>
+						<td class="email">cuixx327@umn.edu</td>
+						<td><a href="http://cse.umn.edu/college/computer-science" target="_self">CS Department Home Page</a></td>
+					</tr>
+
+					<tr class="controw" onmouseover="smallpic(2)" onmouseout="dissapear(2)">
+						<td>President Joan T.A. Gabel</td>
+						<td>Industry</td>
+						<td class="addr">Morrill Hall<br>100 Church Street SE<br>Minneapolis, MN 55455</td>
+						<td>President of the University of Minnesota System
+						<br>
+						<img id="thumbnail2" src="#" class="smallpic" alt="">
+						</td>
+						<td class="email">upres@umn.edu</td>
+						<td><a href="https://president.umn.edu/" target="_self">Home Page</a></td>
+					</tr>
+			
+					<tr class="controw" onmouseover="smallpic(3)" onmouseout="dissapear(3)">
+						<td>Professor Gini</td>
+						<td>Industry</td>
+						<td class="addr">Shepherd Labs<br>100 Union Street SE<br>Minneapolis, MN 55455</td>
+						<td>Professor of Computer Science
+						<br>
+						<img id="thumbnail3" src="#" class="smallpic" alt="">
+						</td>
+						<td class="email">gini@umn.edu</td>
+						<td><a href="https://www-users.cs.umn.edu/~gini/" target="_self">Home Page</a></td>
+					</tr>
+
+					<tr class="controw" onmouseover="smallpic(4)" onmouseout="dissapear(4)">
+						<td>Professor Bates</td>
+						<td>Industry</td>
+						<td class="addr">Amundson Hall<br>421 Washington Ave SE<br>Minneapolis, MN 55455</td>
+						<td>Professor of Chemical Engineering
+						<br>
+						<img id="thumbnail4" src="#" class="smallpic" alt="">
+						</td>
+						<td class="email">bates001@umn.edu</td>
+						<td><a href="https://www.cems.umn.edu/people/faculty/frank-bates" target="_self">Home Page</a></td>
+					</tr>
+			
+					<tr class="controw" onmouseover="smallpic(5)" onmouseout="dissapear(5)">
+						<td>Professor Candler</td>
+						<td>Industry</td>
+						<td class="addr">Akerman Hall<br>110 Union Street SE<br>Minneapolis, MN 55455</td>
+						<td>Professor of Aerospace Engineering
+						<br>
+						<img id="thumbnail5" src="#" class="smallpic" alt="">
+						</td>
+						<td class="email">candler@umn.edu</td>
+						<td><a href="https://cse.umn.edu/aem/graham-v-candler" target="_self">Home Page</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div>
+			<img id="image" src="./gophers-mascot.png" class="largepic" alt="">
+		</div>
+		<div>
+			<p class="al">
+				<button type="button" onclick="switchpic()">Feeling Lucky</button>
+				<button type="button" onclick="rotatePic()">Feeling Dizzy</button>
+			</p>
+		</div>
+	
+		<div id="googleMap"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVjYLQaZS-uzDgTlrnZvqrBs8pKFmPd38&libraries=places&callback=myMap"></script>
+		<div class="searchplace">
+			<label for="places">Find:</label>
+			<select id="places">
+				<option value="restaurant">Restaurant</option>
+				<option value="cafe">Cafe</option>
+				<option value="gas_station">Gas Station</option>
+				<option value="grocery_or_supermarket">Grocery or Supermarket</option>
+				<option value="tourist_attraction">Tourist Attraction</option>
+				<option value="other">Other (type below)</option>
+			</select>
+			<div>
+				<br>
+				<input id="other_places" type="text" name="other" placeholder="Enter Other Places"><br>
+			</div>
+			<div>
+				<br>
+				<label for="range">Within:</label>
+				<input type="number" id="range" name="range" min="10" max="1000" value="500">
+				<label for="range">meters</label>
+			</div>
+			<div>
+				<br>
+				<button id="places_button" type="button" onclick="search_place()">Search</button>
+			</div>
+		</div>
+
+			<div class="direction">
+				<div>
+					<label for="dc">Directions to:</label><br>
+					<br><input id="dc" type="text" name="dc" placeholder="Enter an Address"><br>
+				</div>
+
+				<div>
+					<br><label for="dc">Transit mode:</label><br><br>
+					<input type="radio" name="tra" value="DRIVING">
+					<label>Driving</label>
+					<br>
+					<input type="radio" name="tra" value="WALKING">
+					<label>Walking</label>
+					<br>
+					<input type="radio" name="tra" value="TRANSIT">
+					<label>Transit</label>
+					<br>
+				</div>
+
+
+				<div>
+					<br><button id="go_button" type="button" onclick="getCurrentLocation()">Go</button>
+				</div>
+
+			</div>
+
+	</body>
+</html>

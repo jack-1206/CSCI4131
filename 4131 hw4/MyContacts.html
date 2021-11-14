@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>My Contacts</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		 <script src="Contacts.js"></script> 
+	</head>
+	<body>
+		<div class="navigation"> 
+			<p>
+			<a href="./MyContacts.html" target="_self" >My Contacts</a>   
+			<a href="./MyForm.html" target="_self">Form Input</a> 
+			<a href="./MyWidgets.html" target="_self">My Widgets</a>
+			<a href="./MyServer.html" target="_self">My Server</a>
+			</p> 
+		</div>
+		<h1>My University Contacts</h1>
+		<div>
+		<table class="contTable">
+			<tr>
+				<th>Name</th> 
+				<th>Category</th>
+				<th>Location</th> 
+				<th>Contact Information</th>
+				<th>Email</th> 
+				<th>Website</th>
+			</tr>
+
+			<tr onmouseover="smallpic(1)" onmouseout="dissapear(1)">
+				<td>Mr. Tianming Cui</td>
+				<td>Academic</td>
+				<td>2-209 Keller Hall<br>200 Union Street SE<br>Minneapolis, MN 55455</td>
+				<td>Spring 21 Csci 4131 TA
+					<br>
+					<img id="thumbnail1" src="#" class="smallpic" alt="">
+				</td>
+				<td class="email">cuixx327@umn.edu</td>
+				<td><a href="http://cse.umn.edu/college/computer-science" target="_self">CS Department Home Page</a></td>
+			</tr>
+
+			<tr onmouseover="smallpic(2)" onmouseout="dissapear(2)">
+				<td>President Joan T.A. Gabel</td>
+				<td>Industry</td>
+				<td>202 Morrill Hall<br>100 Church Street SE<br>Minneapolis, MN 55455</td>
+				<td>President of the University of Minnesota System
+					<br>
+					<img id="thumbnail2" src="#" class="smallpic" alt="">
+				</td>
+				<td class="email">upres@umn.edu</td>
+				<td><a href="https://president.umn.edu/" target="_self">Home Page</a></td>
+			</tr>
+			
+			<tr onmouseover="smallpic(3)" onmouseout="dissapear(3)">
+				<td>Professor Gini</td>
+				<td>Industry</td>
+				<td>245 Shepherd Labs<br>100 Union Street SE<br>Minneapolis, MN 55455</td>
+				<td>Professor of Computer Science
+					<br>
+					<img id="thumbnail3" src="#" class="smallpic" alt="">
+				</td>
+				<td class="email">gini@umn.edu</td>
+				<td><a href="https://www-users.cs.umn.edu/~gini/" target="_self">Home Page</a></td>
+			</tr>
+
+			<tr onmouseover="smallpic(4)" onmouseout="dissapear(4)">
+				<td>Professor Bates</td>
+				<td>Industry</td>
+				<td>358 Amundson Hall<br>421 Washington Ave SE<br>Minneapolis, MN 55455</td>
+				<td>Professor of Chemical Engineering
+					<br>
+					<img id="thumbnail4" src="#" class="smallpic" alt="">
+				</td>
+				<td class="email">bates001@umn.edu</td>
+				<td><a href="https://www.cems.umn.edu/people/faculty/frank-bates" target="_self">Home Page</a></td>
+			</tr>
+			
+			<tr onmouseover="smallpic(5)" onmouseout="dissapear(5)">
+				<td>Professor Candler</td>
+				<td>Industry</td>
+				<td>119B Akerman Hall<br>110 Union Street SE<br>Minneapolis, MN 55455</td>
+				<td>Professor of Aerospace Engineering
+					<br>
+					<img id="thumbnail5" src="#" class="smallpic" alt="">
+				</td>
+				<td class="email">candler@umn.edu</td>
+				<td><a href="https://cse.umn.edu/aem/graham-v-candler" target="_self">Home Page</a></td>
+			</tr>
+		</table>
+		</div>
+		<div>
+			<img id="initial" src="./gophers-mascot.png" class="largepic" alt="">
+		</div>
+	</body>
+</html>

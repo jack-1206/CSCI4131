@@ -1,0 +1,25 @@
+table, td, th {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.email {
+	color: blue;
+	text-decoration: underline;
+}
+
+.navb {
+    border-style: solid;
+    border-color: white;
+    background-color: darkblue;
+
+}
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    margin-left: 45px;
+}

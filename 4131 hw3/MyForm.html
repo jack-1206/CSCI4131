@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>My Widgets</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="navigation"> 
+			<p>
+			<a href="./MyContacts.html" target="_self" >My Contacts</a>   
+			<a href="./MyForm.html" target="_self">Form Input</a> 
+			<a href="./MyWidgets.html" target="_self">My Widgets</a>
+			</p> 
+		</div>
+		<div>
+		<p>
+		<form action="http://www-users.cselabs.umn.edu/~joh13266/echo.php" method="post" target="_blank">
+		<table id="formTable">
+			<tr class="fm">
+					<td class="topleftRadius"><label for="name">Name</label></td>
+					<td class="toprightRadius"><input type="text" name="name" pattern="[A-Za-z0-9 ]+$" id="name" required></td>				
+			</tr>
+			<tr class="fm">
+					<td><label for="category">Category</label></td>
+					<td><select id="category" name="category">
+						<option value="Personal">Personal</option>
+						<option value="Academic">Academic</option>
+						<option value="Industry">Industry</option>
+						</select>
+					</td>
+			</tr>
+			<tr class="fm">
+					<td><label for="location">Location</label></td>
+					<td><input type="text" name="location" id="location" required></td>
+			</tr>
+			<tr class="fm">
+					<td><label for="contact">Contact Information</label></td>
+					<td><input type="text" name="contact" id="contact" required></td>
+			</tr>
+			<tr class="fm">
+					<td><label for="email">Email</label></td>
+					<td><input type="text" name="email" id="email" required></td>
+			</tr>
+			<tr class="fm">
+					<td><label for="website">Location</label></td>
+					<td><input type="text" name="website" id="website" required></td>
+			</tr>
+			<tr class="fm">
+				<td class="botleftRadius"><input class="rst" type="reset" value="Reset"></td>
+				<td class="botrightRadius"><input class="smt" type="submit" value="Submit"></td>
+			</tr>
+		</table>
+		</form>
+		</div>
+	</body>
+</html>

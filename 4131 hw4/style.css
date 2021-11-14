@@ -1,0 +1,185 @@
+h1 {
+    font-size: 250%;
+    color: white;
+}
+
+td, th {
+	border: 1px solid rgb(104, 103, 99);
+}
+
+td {
+    padding: 10px;
+    font-size: 95%;
+    vertical-align: top;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+th {
+    padding: 15px;
+    font-size: 120%;
+}
+
+.contTable {
+    width: 40%;
+    border-collapse: collapse;
+    float: left;
+}
+
+.contTable tr:nth-child(odd) {
+    background-color: rgba(94, 235, 240, 0.89);
+}
+
+.contTable tr:nth-child(even) {
+    background-color: ivory;
+}
+
+.email {
+	color: blue;
+	text-decoration: underline;
+}
+
+body {
+    background-color: rgb(104, 103, 99);
+}
+
+.navigation {
+    width: auto;
+    border: 1px solid aliceblue;
+    background-color: rgb(0, 72, 139);
+    padding: 0;
+    font-size: 25px;
+}
+p>a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.smallpic {
+    width: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.largepic  {
+    width: 500px;
+    height: 400px;
+    float: left;
+    padding: 20px 80px;
+}
+
+.fm {
+	background-color: whitesmoke;
+	height: 70px;
+}
+
+#formTable {
+	height:100%;
+	margin:0 auto;
+	border-collapse: collapse;
+}
+
+.topleftRadius{
+	border-top-left-radius:10px;
+}
+
+.toprightRadius{
+	border-top-right-radius:10px;
+}
+
+.botleftRadius{
+	border-bottom-left-radius:10px;
+}
+
+.botrightRadius{
+	border-bottom-right-radius:10px;
+}
+.smt {
+	background-color: green;
+	color: white;
+	width: 153px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.rst {
+	background-color: silver;
+	color: black;
+	width: 90px;
+	width: 153px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.utube {
+	border: 0;
+}
+
+#container {
+width: 535px;
+background: #ffffff;
+padding: 20px;
+margin: 90px auto;
+border-radius: 5px;
+height: 150px;
+border: 2px solid gray;
+}
+#header {
+text-align: center;
+background-color: #FEFFED;
+border-radius: 5px;
+margin: -39px -20px 10px -20px;
+}
+
+#content {
+margin-left: 57px;
+margin-top: 40px;
+}
+#register label{
+margin-right:5px;
+}
+#register input {
+padding: 5px 14px;
+border: 1px solid #d5d9da;
+box-shadow: 0 0 9px #0E34F5 inset;
+width: 272px;
+font-size: 1em;
+height: 25px;
+}
+#register .short{
+font-weight:bold;
+color:#FF0000;
+font-size:larger;
+}
+#register .weak{
+font-weight:bold;
+color:orange;
+font-size:larger;
+}
+#register .good{
+font-weight:bold;
+color:#2D98F3;
+font-size:larger;
+}
+#register .strong{
+font-weight:bold;
+color: limegreen;
+font-size:larger;
+}
+
+#widget{
+	text-align:center;
+	padding-bottom:30px;
+}
+
+.yt, .pw, .ig, .tw{
+	float:left;
+	margin-left: 300px;
+}	
+
+.ig{
+	margin-left: 400px;
+}
+
